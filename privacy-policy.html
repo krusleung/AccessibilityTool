@@ -79,15 +79,15 @@
         <h2>1. Information We Access</h2>
 
         <h3>1.1 AccessibilityService Usage</h3>
-        <p>WhatsBulk uses Android's AccessibilityService API to assist users with motor impairments or other disabilities in sending WhatsApp messages more easily. Through this service, the app accesses:</p>
+        <p>WhatsBulk uses Android's AccessibilityService API to assist users with motor impairments or other disabilities in sending messages via Apps more easily. Through this service, the app accesses:</p>
         <ul>
-            <li><strong>WhatsApp UI Elements:</strong> Buttons, text fields, and interface elements within WhatsApp and WhatsApp Business apps</li>
+            <li><strong>UI Elements:</strong> Buttons, text fields, and interface elements within Apps</li>
             <li><strong>Message Content:</strong> Only the messages that YOU explicitly provide within the app for sending</li>
             <li><strong>Phone Numbers:</strong> Only the contact phone numbers that YOU provide or import</li>
         </ul>
 
         <div class="important">
-            <strong>Important:</strong> The AccessibilityService ONLY monitors WhatsApp applications (com.whatsapp and com.whatsapp.w4b). It does NOT access any other apps on your device.
+            <strong>Important:</strong> The AccessibilityService ONLY monitors messaging applications you choose. It does NOT access any other apps on your device.
         </div>
 
         <h3>1.2 Local Storage</h3>
@@ -104,14 +104,14 @@
         <p>WhatsBulk is designed as an accessibility tool to help users who have:</p>
         <ul>
             <li>Motor impairments that make repetitive messaging difficult</li>
-            <li>Conditions that benefit from automated message assistance</li>
-            <li>Need for simplified WhatsApp messaging workflows</li>
+            <li>Conditions that benefit from scheduled message assistance</li>
+            <li>Need for simplified messaging workflows</li>
         </ul>
 
         <h3>2.2 Functionality</h3>
         <p>The AccessibilityService performs the following actions on your behalf:</p>
         <ul>
-            <li>Opens WhatsApp chat conversations</li>
+            <li>Opens App's chat conversations</li>
             <li>Locates message input fields</li>
             <li>Pastes your pre-written messages</li>
             <li>Clicks the send button</li>
@@ -129,7 +129,7 @@
         <ul>
             <li><strong>Messages:</strong> Temporarily held in device memory during sending, NOT stored permanently</li>
             <li><strong>Contacts:</strong> Stored locally in AsyncStorage, NOT uploaded to any server</li>
-            <li><strong>WhatsApp Data:</strong> Accessed in real-time via AccessibilityService, NOT recorded or saved</li>
+            <li><strong>Data:</strong> Accessed in real-time via AccessibilityService, NOT recorded or saved</li>
         </ul>
 
         <h3>3.2 No Server Communication</h3>
@@ -137,7 +137,7 @@
         <ul>
             <li>Send your messages to our servers</li>
             <li>Upload your contact lists anywhere</li>
-            <li>Transmit WhatsApp conversation data</li>
+            <li>Transmit app conversation data</li>
             <li>Collect analytics or usage statistics</li>
             <li>Track your activity</li>
             <li>Share data with third parties</li>
@@ -146,9 +146,9 @@
         <h2>4. Permissions Explained</h2>
 
         <h3>4.1 AccessibilityService Permission</h3>
-        <p><strong>Why we need it:</strong> To interact with WhatsApp's interface on your behalf, helping users with disabilities send messages more easily.</p>
-        <p><strong>How we use it:</strong> Only to automate message sending within WhatsApp apps as described in Section 2.2.</p>
-        <p><strong>What we access:</strong> WhatsApp UI elements only (no other apps).</p>
+        <p><strong>Why we need it:</strong> To interact with App's interface on your behalf, helping users with disabilities send messages more easily.</p>
+        <p><strong>How we use it:</strong> Only to schedule message sending within Apps as described in Section 2.2.</p>
+        <p><strong>What we access:</strong> The App's UI elements only which you choose to message.</p>
 
         <h3>4.2 Other Permissions</h3>
         <ul>
@@ -160,14 +160,13 @@
 
         <h2>5. Third-Party Services</h2>
 
-        <h3>5.1 WhatsApp</h3>
-        <p>WhatsBulk interacts with WhatsApp and WhatsApp Business apps installed on your device. We do NOT:</p>
+        <h3>5.1 Messaging Apps</h3>
+        <p>WhatsBulk interacts with Messaging apps installed on your device. We do NOT:</p>
         <ul>
-            <li>Share data with Meta/WhatsApp</li>
-            <li>Use WhatsApp's official APIs (we use AccessibilityService instead)</li>
-            <li>Transmit your messages through WhatsApp's servers (beyond normal WhatsApp functionality)</li>
+            <li>Share data with messaging apps</li>
+            <li>Transmit your messages through App's servers (beyond normal App functionality)</li>
         </ul>
-        <p><strong>Note:</strong> Your messages are sent through WhatsApp's normal infrastructure, subject to WhatsApp's own privacy policy and terms of service.</p>
+        <p><strong>Note:</strong> Your messages are sent through App's normal infrastructure, subject to App's own privacy policy and terms of service.</p>
 
         <h3>5.2 No Analytics or Tracking</h3>
         <p>WhatsBulk does NOT use:</p>
@@ -232,10 +231,10 @@
         <div class="important">
             <p><strong>Important Notice:</strong></p>
             <ul>
-                <li>WhatsBulk is NOT affiliated with, endorsed by, or partnered with WhatsApp or Meta</li>
-                <li>Use of this app should comply with WhatsApp's Terms of Service</li>
-                <li>Automated messaging may be subject to WhatsApp's usage policies</li>
-                <li>We are not responsible for any account restrictions imposed by WhatsApp</li>
+                <li>WhatsBulk is NOT affiliated with, endorsed by, or partnered with any third party</li>
+                <li>Use of this app should comply with App's Terms of Service</li>
+                <li>Scheduled messaging may be subject to App's usage policies</li>
+                <li>We are not responsible for any account restrictions imposed by App</li>
             </ul>
         </div>
 
